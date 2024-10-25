@@ -1,13 +1,17 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import "tachyons";
+import App from "./App"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+  <Fragment>
+      <App />
+    <footer className="tc ma3">By Miguel</footer>
+  </Fragment>  
   </React.StrictMode>
 );
 
