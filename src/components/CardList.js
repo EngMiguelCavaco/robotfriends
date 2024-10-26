@@ -2,7 +2,10 @@ import React from "react";
 import Card from './Card';
 
 const CardList = ({robots}) => {
-    return (
+    if (robots.length === 0) {
+        return (<h1 className="tc">No matches</h1>)
+    } else {
+        return (
         <div>
             {robots.map((user) => {
                 return (
@@ -12,10 +15,10 @@ const CardList = ({robots}) => {
                         name={user.name} 
                         email={user.email}
                     />
-                );
-            })}
+                );})
+            }
         </div>
-    );
+    );}
 }
 
 export default CardList;
