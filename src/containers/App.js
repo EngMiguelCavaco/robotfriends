@@ -45,7 +45,6 @@ const App = () => {
                 <Scroll>
                     <CardList robots={filterRobots} />
                 </Scroll>
-                <footer className="tc ma3">By Miguel</footer>
             </div>
         )
     }
